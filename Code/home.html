@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+		<link href="static/css/style_main.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="static/javascript/javas.js"></script>
+
+	</head>
+	<body>
+			<ul class=headNav>
+				<li class="headL"><a href= "/"><img src="static/images/doge.png" class="doge">
+						<p style="height: 100%;margin: 0; padding-left: 65px;">Phoebe</p></a></li>
+			<li class="headL" style="float: right;"><a href="/logout">Logout</a></li>
+			<li class="headL" style="float: right; margin-right:10px" id = "profile"></li>
+			<li class="headL" style="float: right;"><a href="/event">Events</a></li>
+			<li class="headL" style="float: right; height:"><form style = "height: 100%;" method="post" action="search">
+			<input  id="searching" type="text" name="searchID" placeholder="Search Users...">
+			</form>	
+			</li>
+			</ul>
+		<div class="sidebar">
+			<ul id = "userId">
+			</ul>
+		</div>
+		<div class="chat-area">
+			<div id="overlaysidebar" onclick="off()"><div id="text"></div></div>
+			<div class="chat" id = "scroll_area">
+			<div class="person" id=person></div>
+			
+			<div id=msgs></div>
+			</div>
+			<div class="message">
+				<form accept-charset="utf-8" action="sendMessage" name= "msgForm" method="post" enctype="multipart/form-data" class="messageForm">
+				<div class="filebuttonarea">
+					<input type="file" name="myFile" class="choose">
+				</div>
+            	<input id = "message" type="text" size="100" name="message" placeholder="Send a message">	
+
+				<button id ="send" name="destination" value ="unknown" class="btSend">Send</button>			</form>
+			</div>
+		</div>
+   		<footer>
+			<p style="height: 100%; width: 100%; margin-top: 12px; text-align: center; bottom: 10px"><b>©Audrey Livirya</b></p>
+		</footer>
+	</body>
+</html>
+
+
+
+

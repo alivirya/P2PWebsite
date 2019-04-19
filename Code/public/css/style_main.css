@@ -1,0 +1,329 @@
+@font-face {
+	font-family: 'Questrial', arial;
+}
+
+html, body{
+    margin: 0;
+
+    padding: 0;
+
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+	background-color: #FFF;
+	font-family: 'Questrial', arial;
+	overflow: none;
+}
+
+header {
+	display: block;
+	height: 10%;
+	width: 100%;
+	background-color: #192231;
+}
+
+
+.doge {
+	display: block;
+	float: left;
+	position: fixed;
+	top: 10px;
+	height:70px;
+	width: 70px;
+}
+
+.sidebar {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	background-color: #fff;
+	float: left;
+	width: 20%;
+	height: 85%;
+	overflow:auto;
+}
+
+.chat-area {
+	display: block;
+	float: right;
+	height: 85%;
+	width: 80%;
+}
+
+.person {
+	display: block;
+	height: 10%;
+	color: white;
+	background-color:  rgba(25,34,49,0.8);
+}
+.chat {
+	display: block;
+	height: 80%;	
+	background-color: #fff;
+}
+
+.msgLine {
+	padding-top: 40px;
+	display: block;
+	font-size: 25px;
+	height: auto;
+	width: 100%;
+	float: left;
+}
+
+.time {
+	margin: 0;
+	display: block;
+	float: right;
+	font-size: 20px;
+	text-align: right;
+}
+
+.message {
+	display: block;
+	height: 20%;
+	background-color: #FFF;
+}
+.messageForm {
+	height: 100%;
+	width: 100%;
+}
+input[id="message"] {
+	height: 82%;
+	width: 80%;
+	float: left;
+	font-size: 20px; 
+	background-color: #FFF;
+	overflow: auto;
+	display: block;
+	padding: 0;
+	border: none;
+}
+
+input[type="file"] {
+	height: 100%;
+}
+
+
+.btSend {
+  width : 20%;
+  height: 82%;
+  padding: 0px;
+  float: right;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #FFF;
+  background-color: #533745;
+  border: none;
+  border-radius: 0px;
+}
+
+.btSend:hover {
+background-color: #0B2545
+}
+
+.btSend:active {
+  background-color: #0B2545;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 95%;
+}
+li a {
+	 padding: 30px 8px;
+	 display: block;
+	 text-decoration: none;
+	 color: #000;
+	 height:60px;
+	 width:98.5%;
+	 font-size:30px;
+}
+
+li a:hover {
+	background-color: #0B2545;
+	color: white;
+}
+
+footer {
+	background-color: #533745;
+	display: block;
+	height: 5%;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+	color: black;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+
+.dp{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	height: 300px;
+	width: auto;
+}
+
+.name{
+	text-align: center;
+	font-size:50px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.position{
+	text-align: center;
+}
+
+.edit{
+	display: none;
+}
+
+.filebuttonarea {
+	height: 18%;
+	width: 100%;
+	background-color: #FFF;
+}
+
+.msgPicture {
+	height: 200px;
+	width: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+input[id= "searching"] {
+    width: 400px;
+    height: 100%;
+    background-color: #FFF;
+    border: none;
+}
+
+
+
+.headNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color: #533745;
+	width: 100%;
+	height: 10%;
+}
+
+.headL {
+    float: left;
+    height: 100%;
+}
+
+.headL a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.headL a:hover:not(.active) {
+    background-color: #0B2545;
+}
+
+.editp {
+	margin: 0 auto;
+	display: block;
+}
+
+
+#overlaysidebar {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+#msgs{
+	height: 90%;
+	width: 100%;
+	overflow: auto;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    top: -5px;
+    right: 105%; 
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.ideally {
+overflow: auto;
+position: fixed;
+top: 80px;
+bottom: 50px;
+width: 100%;}

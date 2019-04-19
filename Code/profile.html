@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+		<link href="static/css/style_main.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="static/javascript/profilejavas.js"></script>
+	</head>
+	<body>
+		<ul class=headNav>
+			<li class="headL"><a href= "/"><img src="static/images/doge.png" class="doge">
+				<p style="height: 100%;margin: 0; padding-left: 65px;">Phoebe</p></a></li>
+			<li class="headL" style="float: right;"><a href="/logout">Logout</a></li>
+			<li class="headL" id = "profile" style="float: right; margin-right:10px" ></li>
+			<li class="headL" style="float: right;"><a href="/event">Events</a></li>
+			<li class="headL" style="float: right; height:"><form style = "height: 100%;" method="post" action="search">
+			<input  id="searching" type="text" name="searchID" placeholder="Search Users...">
+			</form>	
+			</li>
+		</ul>
+		<div id="overlaysidebar">
+		<div id="text">
+		<form accept-charset="utf-8" id = "edit" action="editProfile" method="post" enctype="multipart/form-data" class="editP">
+			Name: <input type="text" size="100" name="fullname">
+			Position: <input type="text" size="100" name="position">	 
+			Description: <input type="text" size="100" name="description">	 
+			Location: <input type="text" size="100" name="location">	 
+			Picture: <input type="text" size="100" name="picture">
+
+			<center><button type="submit" form ="edit" id ="send" name="user" value ="">Update Details</button></center></br>
+			<center><a href = "javascript:off()">[exit]</a></center>
+		</form>
+		</div>
+		</div>
+			<img src = "" class="dp" id ="profilepic">'
+			<p id="name" class="name">{name}</p>
+			<p id="position" class ="position">Position: {position}</br>
+			Location: {location}</br>
+			Description: {description}		</br>	</p>
+			<center>Edit Status: <form action="/updateStatus">
+  						<select name="status">
+    						<option value="Online" selected>Online</option>
+    						<option value="Idle">Idle</option>
+    						<option value="Away">Away</option>
+    						<option value="Do Not Disturb">Do Not Disturb</option>
+    						<option value="Offline">Offline</option>
+  						</select>  <input type="submit">
+						</form></center>
+			<button type="button" class="editp" onclick='javascript:editProfile()'>Edit Profile</button>
+   		<footer>
+			<p style="position:relative;bottom:3px; text-align: center">©Audrey Livirya</p>
+		</footer>
+	</body>
+</html>
+
+
+
+
