@@ -1,10 +1,8 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### What is this repository for? ###
 
-* Peer-to-peer network Application Prototype - ALIV074
+* Peer-to-peer network Application Prototype
 
 ### How do I get set up? ###
 
@@ -37,17 +35,3 @@ This README would normally document whatever steps are necessary to get your app
 * The main page is where you can message people
 * Click the person you woud like to message
 * Message/Send them a file
-
-
-
-### INTER APP FEATURES ### 
-* EVENTS : Supported by hone075, bhal755, aalo097, jecc724, kjag214, ramo588
-* STATUS: Supported by hone075, asut324, abha808, ssit662, jecc724, kjag214, wgra538
-
-### Report, DOCS & Powerpoint? ###
-
-* Accessible through the root directory of the git repository
-
-### Who do I talk to? ###
-
-* Audrey Livirya :)
